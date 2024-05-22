@@ -19,15 +19,15 @@
 $backgroundColor: #191919;
 
 $mainColor: #fff;
-$headingColor: #fff;
+$headingColor: rgb(255, 0, 85);
 
 $mainFontSize: 42px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont:  "Alice", serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
+$headingTextTransform: capitalize;
+$headingFontWeight: 400;
 $linkColor: #42affa;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: rgba( $linkColor, 0.75 );
@@ -44,3 +44,8 @@ $heading4Size: 1.0em;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+h1, h2, h3 {
+  background-color: rgb(147, 255, 147);
+  // background-image: linear-gradient(45deg, #f2e289 0%, #83ef79 100%);
+}
