@@ -23,11 +23,11 @@ $headingColor: rgb(255, 0, 85);
 
 $mainFontSize: 42px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont:  "Alice", serif;
+$headingFont:  "Playfair Display", serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: capitalize;
-$headingFontWeight: 400;
+$headingFontWeight: 700;
 $linkColor: #42affa;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: rgba( $linkColor, 0.75 );
@@ -47,5 +47,12 @@ $heading4Size: 1.0em;
 
 h1, h2, h3 {
   background-color: rgb(147, 255, 147);
+  font-optical-sizing: auto;
   // background-image: linear-gradient(45deg, #f2e289 0%, #83ef79 100%);
+}
+
+blockquote {
+ font-family: "Playfair Display", serif;
+ font-style: italic;
+ font-weight: 400;
 }

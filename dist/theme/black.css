@@ -18,13 +18,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Alice, serif;
+  --r-heading-font: Playfair Display, serif;
   --r-heading-color: rgb(255, 0, 85);
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: capitalize;
   --r-heading-text-shadow: none;
-  --r-heading-font-weight: 400;
+  --r-heading-font-weight: 700;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 2.5em;
   --r-heading2-size: 1.6em;
@@ -359,4 +359,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 h1, h2, h3 {
   background-color: rgb(147, 255, 147);
+  font-optical-sizing: auto;
+}
+
+blockquote {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
 }
