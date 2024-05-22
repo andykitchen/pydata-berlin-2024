@@ -4,56 +4,63 @@
  * By Hakim El Hattab, http://hakim.se
  */
 
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
 
-
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #191919;
 
 $mainColor: #fff;
-$headingColor: rgb(255, 0, 85);
+$headingColor: #fff;
 
 $mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont:  "Playfair Display", serif;
+$mainFont: "Source Sans Pro", Helvetica, sans-serif;
+$headingFont: "Playfair Display", serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: capitalize;
+$headingTextTransform: none;
 $headingFontWeight: 700;
 $linkColor: #42affa;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: rgba( $linkColor, 0.75 );
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: rgba($linkColor, 0.75);
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
 $heading3Size: 1.3em;
-$heading4Size: 1.0em;
+$heading4Size: 1em;
 
 // Change text colors against light slide backgrounds
 @include light-bg-text-color(#222);
-
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
-h1, h2, h3 {
-  background-color: rgb(147, 255, 147);
+h1,
+h2,
+h3 {
   font-optical-sizing: auto;
-  // background-image: linear-gradient(45deg, #f2e289 0%, #83ef79 100%);
+  background: black;
+  padding: 0 24px 12px 24px;
+  display: inline-block;
 }
 
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #f289a3, #83ef79, #ff0055);
+}
+
+
 .reveal blockquote {
- font-family: "Playfair Display", serif;
- font-style: italic;
- font-weight: 400;
- background: rgba(255, 0, 85, 0.25);
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  background: #cb0044;
 }
