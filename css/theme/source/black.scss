@@ -48,9 +48,6 @@ h3 {
   background: black;
   padding: 0 24px 12px 24px;
   display: inline-block;
-}
-
-.border-gradient {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
@@ -63,4 +60,5 @@ h3 {
   font-style: italic;
   font-weight: 400;
   background: #cb0044;
+  text-shadow: 0 2px 2px rgba(0,0,0,.5)
 }
